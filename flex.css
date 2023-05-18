@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: bisque;
+}
+h1{
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+    font-size: 50px;
+}
+
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+.gallery img{
+    width: calc(100% / 4 - 30px);
+    height: 450px;
+    padding: 15px;
+}
+@media (max-width:1040px){
+    .gallery img{
+        width: calc(100% / 3 - 30px);
+    }
+}
+@media (max-width:1024px){
+    .gallery img{
+        width: calc(100% / 2 - 30px);
+    }
+}
+@media screen and (max-width:560px) {
+    .gallery img{
+        width: calc(100% / 1 - 30px);
+    }
+}
